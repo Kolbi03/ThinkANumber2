@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/linear2"
+        android:layout_below="@id/easy">
+
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/heart2"
+            android:id="@+id/Viewheart4"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/heart2"
+            android:id="@+id/Viewheart1"
+            android:layout_margin="10pt"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/heart2"
+            android:id="@+id/Viewheart2"/>
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/heart2"
+            android:id="@+id/Viewheart3"
+            android:layout_margin="10pt"/>
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/heart2"
+            android:id="@+id/Viewheart5"
+            android:visibility="invisible"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/easy"
+        android:width="85pt"
+        android:text="Könnyű"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/hard"
+        android:width="85pt"
+        android:text="Nehéz"
+        android:textSize="25sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPlus"
+        android:text="+"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/textViewNumber"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNumber"
+        android:layout_centerInParent="true"
+        android:textSize="40sp"
+        android:text="0"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMinus"
+        android:text="-"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewNumber"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:layout_alignParentBottom="true"
+        android:text="Tipp"
+        android:textSize="25sp"/>
+
+
+</RelativeLayout>
